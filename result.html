@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Result Page</title>
+      <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="data();">
+
+      <ul class="nav_bar">
+            <li>
+                  <a href="index.html"> الصفحة الرئيسة </a>
+            </li>
+            <li>
+                  <a href="products.html"> منتجاتنا وخدماتنا </a>
+            </li>
+            <li>
+                  <a href="req_Loan.html"> الحصول على قرض </a>
+            </li>
+            <li>
+                  <a href="about.html"> من نحن </a>
+            </li>
+            <li class="logo">
+                  <a href="index.html">
+                        <img src="images/logo.png">
+                  </a>
+            </li>
+      </ul>
+      <div>
+            <table class="products_table" align="center">
+                  <caption>
+                        <h1>
+                              نتيجة الطلب
+                        </h1>
+                  </caption>
+                  <tr>
+                        <td colspan="2">
+                              <h2>معلومات مقدم الطلب</h2>
+                        </td>
+                        <td colspan="2">
+                              <h2>معلومات القرض</h2>
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>الاسم</td>
+                        <td id="name"></td>
+
+                        <td>قيمة القرض</td>
+                        <td id="loan_value"></td>
+                  </tr>
+                  <tr>
+                        <td>الرقم الوطني</td>
+                        <td id="serial_number"></td>
+
+                        <td>طريقة تقسيط الدفعات</td>
+                        <td id="payment"></td>
+                  </tr>
+                  <tr>
+                        <td>رقم الهاتف</td>
+                        <td id="phone_number"></td>
+
+                        <td>عدد سنوات القرض</td>
+                        <td id="years"></td>
+
+                  </tr>
+                  <tr>
+                        <td>تاريخ الميلاد</td>
+                        <td id="birthdate"></td>
+
+                        <td>نوع القرض</td>
+                        <td id="type"></td>
+                  </tr>
+                  <tr>
+                        <td>البريد الالكتروني</td>
+                        <td id="email"></td>
+
+                        <td>نسبة الفائدة</td>
+                        <td id="rate"></td>
+                  </tr>
+                  <tr>
+                        <td>العنوان</td>
+                        <td id="address"></td>
+
+                        <td>الفائدة</td>
+                        <td id="value"></td>
+                  </tr>
+            </table>
+
+      </div>
+
+      <script src="myfunctions.js"></script>
+</body>
+
+</html>

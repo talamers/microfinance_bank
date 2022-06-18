@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Products Page</title>
+      <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+      <ul class="nav_bar">
+            <li>
+                  <a href="index.html"> الصفحة الرئيسة </a>
+            </li>
+            <li class="active_li">
+                  <a href="products.html"> منتجاتنا وخدماتنا </a>
+            </li>
+            <li>
+                  <a href="req_Loan.html"> الحصول على قرض </a>
+            </li>
+            <li>
+                  <a href="about.html"> من نحن </a>
+            </li>
+            <li class="logo">
+                  <a href="index.html">
+                        <img src="images/logo.png">
+                  </a>
+            </li>
+      </ul>
+
+      <div id="notes_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                  <span class="close" onclick="close_modal()">&times;</span>
+                  <div class="notes" id="notes">
+                        <h3 id="notes_title"> القرض </h3>
+                        <div id="loan_details" class="right_text"></div>
+                  </div>
+
+            </div>
+      </div>
+
+      <table class="products_table" border="border" align="center">
+            <caption>
+                  <h2>
+                        منتجاتنا البنكية
+                  </h2>
+            </caption>
+
+            <tr>
+                  <th>المنتجات</th>
+                  <th>الفائدة</th>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('saving');" class="loan_type_link">
+                              حساب التوفير
+                        </a>
+                  </td>
+                  <td> 5% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('current');" class="loan_type_link">
+                              الحساب الجاري
+                        </a>
+                  </td>
+                  <td> 10% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('learning');" class="loan_type_link">
+                              القرض التعليمي
+                        </a>
+                  </td>
+                  <td> 10% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('home');" class="loan_type_link">
+                              القرض السكني
+                        </a>
+                  </td>
+                  <td> 11% </td>
+
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('commercial');" class="loan_type_link">
+                              القرض التجاري
+                        </a>
+                  </td>
+                  <td> 18% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('agricultural');" class="loan_type_link">
+                              القرض الزراعي
+                        </a>
+                  </td>
+                  <td> 14% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('transport');" class="loan_type_link">
+                              قرض النقل
+                        </a>
+                  </td>
+                  <td> 12% </td>
+            </tr>
+            <tr>
+                  <td>
+                        <a href="#" onclick="product('workshops');" class="loan_type_link">
+                              قرض الورشات
+                        </a>
+                  </td>
+                  <td> 14% </td>
+            </tr>
+
+      </table>
+
+      <script src="myfunctions.js"></script>
+</body>
+
+</html>

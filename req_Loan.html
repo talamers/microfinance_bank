@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Requset loan</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="Captcha();">
+
+	<ul class="nav_bar">
+		<li>
+			<a href="index.html"> الصفحة الرئيسة </a>
+		</li>
+		<li>
+			<a href="products.html"> منتجاتنا وخدماتنا </a>
+		</li>
+		<li class="active_li">
+			<a href="req_Loan.html"> الحصول على قرض </a>
+		</li>
+		<li>
+			<a href="about.html"> من نحن </a>
+		</li>
+		<li class="logo">
+			<a href="index.html">
+				<img src="images/logo.png">
+			</a>
+		</li>
+	</ul>
+
+
+	<div class="form_card">
+
+		<h2 class="vertical_center">
+			تقديم طلب قرض
+		</h2>
+
+		<form id="loan_form" method="GET" action="result.html" onsubmit="return(submit_form())">
+
+			<div>
+				<label for="name">الاسم</label>
+				<input type="text" id="name" name="name" placeholder="الاسم يتضمن أحرف هجائية فقط" class="my_input"
+					required />
+			</div>
+			<br>
+
+			<div>
+				<label for="serial_number">الرقم الوطني</label>
+				<input type="number" id="serial_number" name="serial_number" size="11" class="my_input"
+				 placeholder="الرقم الوطني مؤلف من 11 خانة" required />
+			</div>
+			<br>
+
+			<div>
+				<label for="birth_date">تاريخ الميلاد</label>
+				<input type="date" id="birth_date" name="birth_date" class="my_input" required/>
+			</div>
+			<br>
+
+			<div>
+				<label for="phone_number">رفم الهاتف</label>
+				<input type="phone" id="phone_number" name="phone_number" placeholder="#### #### 09" class="my_input"
+					required />
+			</div>
+			<br>
+
+			<div>
+				<label for="email">البريد الالكتروني</label>
+				<input type="email" id="email" name="email" placeholder="example@example.com" class="my_input" required />
+			</div>
+			<br>
+			
+			<div>
+				<label for="address">عنوان السكن</label>
+				<textarea type="address" id="address" name="address" class="my_input">
+				</textarea>
+			</div>
+			<br>
+
+			<div>
+				<label for="value">قيمة القرض المطلوبة</label>
+				<input type="number" min="1000000" max="10000000" name="value"
+					placeholder="أدخل قيمة القرض بين 1 مليون ل 10 مليون" class="my_input" required />
+			</div>
+			<br>
+
+			<div>
+				<label for="type">اختر نوع القرض</label>
+				<select id="type" name="loan_type" class="my_input">
+					<option value="learning" selected>تعليمي</option>
+					<option value="home">سكني</option>
+					<option value="agricultural">زاعي</option>
+					<option value="commercial">تجاري</option>
+					<option value="transport">نقل</option>
+					<option value="workshops">ورشات</option>
+				</select>
+			</div>
+			<br>
+
+			<div>
+				<label for="period">اختر عدد سنوات القرض</label>
+				<select id="period" name="loan_period" class="my_input">
+					<option value="3" selected>3</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+				</select>
+			</div>
+			
+
+			<div>
+				<p>طريقة تسديد الدفعات</p>
+				<label>
+					شهرية
+					<input type="radio" name="payment" value="شهرية" checked>
+				</label>
+
+				<label>
+					سنوية
+					<input type="radio" name="payment" value="سنوية">
+				</label>
+
+				<label>
+					ربعية
+					<input type="radio" name="payment" value="ربعية">
+				</label>
+			</div>
+			<br>
+
+			<div>
+				<label for="mainCaptcha" class="block">رمز التحقق</label>
+				<input type="text" id="mainCaptcha" name="mainCaptcha" class="my_cap" />
+				<input type="button" id="refresh" value="تحديث" onclick="Captcha();" class="submit_button" />
+			</div>
+			<br>
+
+			<div>
+				<input type="text" id="captcha" name="captcha" placeholder="ادخل رمز التحقق السابق" class="my_input" />
+			</div>
+			<br>
+
+			<div class="vertical_center">
+				<button type="submit" class="submit_button">
+					تقديم الطلب
+				</button>
+			</div>
+
+		</form>
+	</div>
+
+	<script src="myfunctions.js"></script>
+</body>
+
+</html>

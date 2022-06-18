@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="nav_bar">
+        <li class="active_li">
+            <a href="index.html"> الصفحة الرئيسة </a>
+        </li>
+        <li>
+            <a href="products.html"> منتجاتنا وخدماتنا </a>
+        </li>
+        <li>
+            <a href="req_Loan.html"> الحصول على قرض </a>
+        </li>
+        <li>
+            <a href="about.html"> من نحن </a>
+        </li>
+        <li class="logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </li>
+    </ul>
+
+    <div class="my_info">
+
+        <img src="images/student.png" alt="Tala">
+        <h1> Tala Mohammed Almerstani </h1>
+        <h2> تالة محمد المرستاني </h2>
+        <h3> ID: 157704 </h3>
+
+        <div>
+            <a href="#" target="_blanck"> رابط النشر </a>
+            &nbsp;&nbsp;&nbsp;
+            <a id="show_notes" href="#" onclick="show_modal();">عرض الملاحظات</a>
+        </div>
+
+        <!-- The Modal -->
+        <div id="notes_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="close_modal()">&times;</span>
+                <div class="notes">
+                    <h3 id="notes_title"> ملاحظات </h3>
+                    <ul id="notes_list">
+                        <li class="notes_body">
+                            <span>
+                                تم اقتباس معلومات الموقع من موقع
+                                <a href="https://www.ebdaabahrain.com/index.php"> Ebdaa For Microfinance </a>
+                            </span>
+
+                        </li>
+                        <li class="notes_body">
+                            <span>
+                                صور الموقع من موقع
+                                <a href="https://iconarchive.com/"> Icon Archive </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="myfunctions.js"></script>
+</body>
+
+</html>
